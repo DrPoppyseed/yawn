@@ -1,0 +1,19 @@
+{
+  "name": "yawn-server",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "pnpm jest",
+    "build": "pnpm run lint:fix && etsc -p ./tsconfig.build.json",
+    "start": "nodemon",
+    "launch": "node ./build/server.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.28",
+    "esbuild-node-tsc": "^1.8.5"
+  },
+  "dependencies": {
+    "@trpc/server": "10.0.0-rc.4",
+    "typescript": "^4.5.2",
+    "zod": "^3.19.1"
+  }
+}
